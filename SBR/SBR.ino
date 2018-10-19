@@ -362,7 +362,7 @@ void stepper(int num, int motor, int direct){
 //calls stepper function above to remove sludge automatically
 void sludgeremoval(){
   stepper(6400,1,2);//fills up tube. revolutions, 1st motor, "empty" dir
-  stepper(1250,1,2);//empties(was 2500 steps, now 1250). revolutions, 1st motor, "empty" dir
+  stepper(2500,1,2);//empties(2500 steps equivalent to about 1 gal/wk). revolutions, 1st motor, "empty" dir
   stepper(6400,1,1);//empty tube back into sbr. revolutions, 1st motor, "fill" dir
 }
 
